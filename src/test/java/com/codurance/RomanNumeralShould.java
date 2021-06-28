@@ -14,9 +14,11 @@ public class RomanNumeralShould {
   @ParameterizedTest
   @CsvSource({
       "1, I",
-      "2, II"
+      "2, II",
+      "3, III",
+      "4, IV"
   })
-  public void return_I_for_1(int input, String expected) {
+  public void return_roman_for_arabic(int input, String expected) {
     RomanNumeral numeral = new RomanNumeral();
 
     String result = numeral.convert(input);

@@ -2,9 +2,15 @@ package com.codurance;
 
 public class RomanNumeral {
   public String convert(int arabic) {
-    if (arabic > 1){
-      return "II";
+    StringBuilder result = new StringBuilder();
+    for (int i = 0; i < arabic; i++){
+      if (arabic == 4){
+        result.append("IV");
+        break;
+      }
+      result.append("I");
     }
-    return "I";
+
+    return result.toString();
   }
 }
