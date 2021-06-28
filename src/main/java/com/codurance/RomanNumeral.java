@@ -9,6 +9,8 @@ public class RomanNumeral {
     numerals.put(4, "IV");
     numerals.put(5, "V");
     numerals.put(6, "VI");
+    numerals.put(9, "IX");
+    numerals.put(10, "X");
 
     StringBuilder result = new StringBuilder();
     int number = arabic;
@@ -16,7 +18,7 @@ public class RomanNumeral {
     Collections.reverse(nums);
     while (number > 0) {
       for (int n : nums) {
-          if (n <= number){
+          while (n <= number){
             result.append(numerals.get(n));
             number -= n;
           }

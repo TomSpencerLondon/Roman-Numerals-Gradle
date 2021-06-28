@@ -19,7 +19,12 @@ public class RomanNumeralShould {
       "4, IV",
       "5, V",
       "6, VI",
-      "7, VII"
+      "7, VII",
+      "8, VIII",
+      "9, IX",
+      "10, X",
+      "24, XXIV",
+      "28, XXVIII"
   })
   public void return_roman_for_arabic(int input, String expected) {
     RomanNumeral numeral = new RomanNumeral();
