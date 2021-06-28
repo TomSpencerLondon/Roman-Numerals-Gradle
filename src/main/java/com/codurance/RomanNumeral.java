@@ -4,16 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RomanNumeral {
-  Map<Integer, String> numerals = new HashMap<>();
 
   public String convert(int arabic) {
+    Map<Integer, String> numerals = new HashMap<>();
+    numerals.put(4, "IV");
+    numerals.put(5, "V");
+
     StringBuilder result = new StringBuilder();
     for (int i = 0; i < arabic; i++){
-      if (arabic == 5){
-        result.append("V");
-        break;
-      } else if (arabic == 4){
-        result.append("IV");
+      if (numerals.keySet().contains(arabic)){
+        result.append(numerals.get(arabic));
         break;
       }
       result.append("I");
