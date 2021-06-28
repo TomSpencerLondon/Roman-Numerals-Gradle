@@ -1,6 +1,11 @@
 package com.codurance;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class RomanNumeral {
+  Map<Integer, String> numerals = new HashMap<>();
+
   public String convert(int arabic) {
     StringBuilder result = new StringBuilder();
     for (int i = 0; i < arabic; i++){
