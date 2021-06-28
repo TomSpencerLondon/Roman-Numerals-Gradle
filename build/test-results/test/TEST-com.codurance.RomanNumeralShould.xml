@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.codurance.RomanNumeralShould" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-06-28T17:19:10" hostname="Toms-MacBook-Pro-2.local" time="0.039">
+<testsuite name="com.codurance.RomanNumeralShould" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-06-28T18:39:52" hostname="Toms-MacBook-Pro-2.local" time="0.046">
   <properties/>
-  <testcase name="return_roman_for_arabic(int, String)[1]" classname="com.codurance.RomanNumeralShould" time="0.029"/>
+  <testcase name="return_roman_for_arabic(int, String)[1]" classname="com.codurance.RomanNumeralShould" time="0.031"/>
   <testcase name="return_roman_for_arabic(int, String)[2]" classname="com.codurance.RomanNumeralShould" time="0.001"/>
   <testcase name="return_roman_for_arabic(int, String)[3]" classname="com.codurance.RomanNumeralShould" time="0.001"/>
-  <testcase name="return_roman_for_arabic(int, String)[4]" classname="com.codurance.RomanNumeralShould" time="0.0"/>
+  <testcase name="return_roman_for_arabic(int, String)[4]" classname="com.codurance.RomanNumeralShould" time="0.001"/>
   <testcase name="return_roman_for_arabic(int, String)[5]" classname="com.codurance.RomanNumeralShould" time="0.001"/>
+  <testcase name="return_roman_for_arabic(int, String)[6]" classname="com.codurance.RomanNumeralShould" time="0.001"/>
+  <testcase name="return_roman_for_arabic(int, String)[7]" classname="com.codurance.RomanNumeralShould" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

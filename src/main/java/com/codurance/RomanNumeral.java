@@ -1,7 +1,6 @@
 package com.codurance;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class RomanNumeral {
 
@@ -9,16 +8,24 @@ public class RomanNumeral {
     Map<Integer, String> numerals = new HashMap<>();
     numerals.put(4, "IV");
     numerals.put(5, "V");
+    numerals.put(6, "VI");
 
     StringBuilder result = new StringBuilder();
-    for (int i = 0; i < arabic; i++){
-      if (numerals.keySet().contains(arabic)){
-        result.append(numerals.get(arabic));
-        break;
+    int number = arabic;
+    List<Integer> nums = new ArrayList<>(numerals.keySet());
+    Collections.reverse(nums);
+    while (number > 0) {
+      for (int n : nums) {
+          if (n <= number){
+            result.append(numerals.get(n));
+            number -= n;
+          }
       }
-      result.append("I");
+      if (number > 0){
+        result.append("I");
+        number -= 1;
+      }
     }
-
     return result.toString();
   }
 }
