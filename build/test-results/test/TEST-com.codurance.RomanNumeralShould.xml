@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.codurance.RomanNumeralShould" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-28T16:42:51" hostname="Toms-MacBook-Pro-2.local" time="0.032">
+<testsuite name="com.codurance.RomanNumeralShould" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-06-28T16:44:51" hostname="Toms-MacBook-Pro-2.local" time="0.061">
   <properties/>
-  <testcase name="return_I_for_1(int, String)[1]" classname="com.codurance.RomanNumeralShould" time="0.032"/>
+  <testcase name="return_I_for_1(int, String)[1]" classname="com.codurance.RomanNumeralShould" time="0.053"/>
+  <testcase name="return_I_for_1(int, String)[2]" classname="com.codurance.RomanNumeralShould" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

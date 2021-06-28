@@ -12,7 +12,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RomanNumeralShould {
 
   @ParameterizedTest
-  @CsvSource({"1, I"})
+  @CsvSource({
+      "1, I",
+      "2, II"
+  })
   public void return_I_for_1(int input, String expected) {
     RomanNumeral numeral = new RomanNumeral();
 
