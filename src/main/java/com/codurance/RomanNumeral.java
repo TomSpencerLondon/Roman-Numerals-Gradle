@@ -17,12 +17,10 @@ public class RomanNumeral {
     int number = arabic;
     List<Integer> nums = new ArrayList<>(numerals.keySet());
     Collections.reverse(nums);
-    while (number > 0) {
-      for (int n : nums) {
-          while (n <= number){
-            result.append(numerals.get(n));
-            number -= n;
-          }
+    for (int n : nums) {
+      while (n <= number) {
+        result.append(numerals.get(n));
+        number -= n;
       }
     }
     return result.toString();
