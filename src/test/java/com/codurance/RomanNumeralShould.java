@@ -34,4 +34,17 @@ public class RomanNumeralShould {
 
     assertEquals(expected, result);
   }
+
+  @ParameterizedTest
+  @CsvSource({
+      "I, 1",
+      "II, 2"
+  })
+  void return_arabic_from_roman(String input, int expected) {
+    RomanNumeral numeral = new RomanNumeral();
+
+    int result = numeral.revert(input);
+
+    assertEquals(expected, result);
+  }
 }

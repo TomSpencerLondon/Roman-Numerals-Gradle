@@ -34,4 +34,13 @@ public class RomanNumeral {
     Collections.reverse(nums);
     return nums;
   }
+
+  public int revert(String input) {
+    int result = 0;
+    for (int i = 0; i < input.length(); i++){
+      result += 1;
+    }
+
+    return result;
+  }
 }
