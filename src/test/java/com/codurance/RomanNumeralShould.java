@@ -46,7 +46,9 @@ public class RomanNumeralShould {
       "VII, 7",
       "VIII, 8",
       "IX, 9",
-      "X, 10"
+      "X, 10",
+      "XIV, 14",
+      "XXIV, 24",
   })
   void return_arabic_from_roman(String input, int expected) {
     RomanNumeral numeral = new RomanNumeral();
