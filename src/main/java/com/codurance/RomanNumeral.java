@@ -41,6 +41,7 @@ public class RomanNumeral {
     Map<String, Integer> numerals = new HashMap<>();
     numerals.put("I", 1);
     numerals.put("V", 5);
+    numerals.put("X", 10);
 
     int result = 0;
     int previous = 0;
