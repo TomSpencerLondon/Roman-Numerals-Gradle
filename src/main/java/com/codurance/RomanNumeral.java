@@ -2,6 +2,8 @@ package com.codurance;
 
 import java.util.*;
 
+import static java.util.Arrays.asList;
+
 public class RomanNumeral {
 
   public String convert(int arabic) {
@@ -36,9 +38,24 @@ public class RomanNumeral {
   }
 
   public int revert(String input) {
+    Map<String, Integer> numerals = new HashMap<>();
+    numerals.put("I", 1);
+    numerals.put("V", 5);
+
     int result = 0;
-    for (int i = 0; i < input.length(); i++){
-      result += 1;
+    int previous = 0;
+
+    List<String> nums = asList(input.split(""));
+    Collections.reverse(nums);
+
+    for (String c : nums){
+      int number = numerals.get(c);
+      if (number < previous){
+        result -= number;
+      }else {
+        result += number;
+      }
+      previous = number;
     }
 
     return result;

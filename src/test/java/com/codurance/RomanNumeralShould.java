@@ -38,7 +38,11 @@ public class RomanNumeralShould {
   @ParameterizedTest
   @CsvSource({
       "I, 1",
-      "II, 2"
+      "II, 2",
+      "III, 3",
+      "IV, 4",
+      "V, 5",
+      "VI, 6"
   })
   void return_arabic_from_roman(String input, int expected) {
     RomanNumeral numeral = new RomanNumeral();
