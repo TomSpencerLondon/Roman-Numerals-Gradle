@@ -15,14 +15,18 @@ public class RomanNumeral {
 
     StringBuilder result = new StringBuilder();
     int number = arabic;
-    List<Integer> nums = new ArrayList<>(numerals.keySet());
-    Collections.reverse(nums);
-    for (int n : nums) {
+    for (int n : getNums(numerals)) {
       while (n <= number) {
         result.append(numerals.get(n));
         number -= n;
       }
     }
     return result.toString();
+  }
+
+  private List<Integer> getNums(Map<Integer, String> numerals) {
+    List<Integer> nums = new ArrayList<>(numerals.keySet());
+    Collections.reverse(nums);
+    return nums;
   }
 }
