@@ -6,6 +6,7 @@ public class RomanNumeral {
 
   public String convert(int arabic) {
     Map<Integer, String> numerals = new HashMap<>();
+    numerals.put(1, "I");
     numerals.put(4, "IV");
     numerals.put(5, "V");
     numerals.put(6, "VI");
@@ -22,10 +23,6 @@ public class RomanNumeral {
             result.append(numerals.get(n));
             number -= n;
           }
-      }
-      if (number > 0){
-        result.append("I");
-        number -= 1;
       }
     }
     return result.toString();
